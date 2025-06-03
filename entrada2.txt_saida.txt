@@ -1,0 +1,8 @@
+[John] existe!
+[Ninguem] NÃO existe!
+[Julia] NÃO existe!
+[Julia] NÃO conhece [Alface]
+[Fabio] NÃO conhece [Ivo]
+[John] conhece [Pedro]
+#Guiche1 [ Alface John Pedro ]
+#Guiche2 [ Guga Ninguem ]

@@ -1,5 +1,10 @@
 import Parse.Parser;
-import java.util.ArrayList;
+import java.io.BufferedWriter;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter; // Importar esta classe
+import java.nio.charset.StandardCharsets; // Importar esta classe
+import java.util.ArrayList; // Importar esta classe
 import java.util.List;
 
 public class Simulador {
@@ -10,22 +15,23 @@ public class Simulador {
             return;
         }
         String filePath = args[0];
+        String outputFilePath = filePath + "_saida.txt"; // Define o nome do arquivo de saída
 
         Grupos grupos = new Grupos();
         SistemaFilas sistemaFilas = new SistemaFilas(grupos);
         List<String> outputLines = new ArrayList<>();
-        
+
         Parser parser = new Parser(filePath);
 
         while (parser.hasNext()) {
             String linha = parser.nextLine();
-            
-            if (linha == null) { 
+
+            if (linha == null) {
                 continue;
             }
 
             linha = linha.trim();
-            
+
             if (linha.isEmpty()) {
                 continue;
             }
@@ -75,8 +81,17 @@ public class Simulador {
 
         parser.close();
 
-        for (String outLinha : outputLines) {
-            System.out.println(outLinha);
+        // Escreve as linhas de saída no arquivo
+        try (BufferedWriter writer = new BufferedWriter(
+                new OutputStreamWriter(
+                    new FileOutputStream(outputFilePath), StandardCharsets.UTF_8))) { // <-- AQUI ESTÁ A MUDANÇA
+            for (String outLinha : outputLines) {
+                writer.write(outLinha);
+                writer.newLine(); // Adiciona uma nova linha após cada string
+            }
+            System.out.println("Resultados escritos em: " + outputFilePath);
+        } catch (IOException e) {
+            System.err.println("Erro ao escrever no arquivo de saída: " + e.getMessage());
         }
     }
 }

@@ -1,0 +1,17 @@
+grupo: Joao Olga
+grupo: Maria 
+grupo: Fabio Manuel Alface
+grupo: Fabio John Pedro
+existe: John
+existe: Ninguem
+existe: Julia
+conhece: Julia Alface
+conhece: Fabio Ivo
+conhece: John Pedro
+criaFila: Guiche1
+chegou: Ana Maria Alface John
+criaFila: Guiche2
+chegou: Joao Bia Olga Guga Pedro Fabio Ninguem
+desiste: Ana Fabio Olga
+atendeFila: Guiche1 Guiche2 Guiche2
+imprime:
