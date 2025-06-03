@@ -6,7 +6,7 @@
 | Guilherme Peres | 822128233 |
 | Pedro Henrique Souto Freitas | 822161391 |
 | Thiago Baptista | 821223900 |
-| Bruno | 1 |
+| Bruno de Oliveira Santos | 823223513 |
 
 Este projeto em Java simula dois cenários interconectados: um sistema de gerenciamento de grupos sociais onde pessoas se conhecem (Fase 1) e um sistema de gerenciamento de filas de atendimento com regras especiais baseadas nesses grupos (Fase 2). A implementação foca na eficiência e clareza, utilizando estruturas de dados apropriadas para cada funcionalidade.
 
