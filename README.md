@@ -1,10 +1,12 @@
 # A3 Estrutura de Dados
 
-Integrantes:
-Vinícius Scarpa - RA: 821218970
-Guilherme Peres - RA: 822128233
-Pedro Henrique Souto Freitas - RA: 822161391
-Thiago Baptista - RA: 821223900
+| Integrante | RA |
+| ------ | ------ |
+| Vinícius Scarpa | 821218970 |
+| Guilherme Peres | 822128233 |
+| Pedro Henrique Souto Freitas | 822161391 |
+| Thiago Baptista | 821223900 |
+| Bruno | 1 |
 
 Este projeto em Java simula dois cenários interconectados: um sistema de gerenciamento de grupos sociais onde pessoas se conhecem (Fase 1) e um sistema de gerenciamento de filas de atendimento com regras especiais baseadas nesses grupos (Fase 2). A implementação foca na eficiência e clareza, utilizando estruturas de dados apropriadas para cada funcionalidade.
 
